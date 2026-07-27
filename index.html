@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="weather-card">
+
+        <div class="header">
+            <h1>🌤 Weather App</h1>
+            <button id="themeBtn">🌙</button>
+        </div>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        <div class="weather-info">
+
+            <img id="weatherIcon" src="" alt="Weather Icon">
+
+            <h2 id="cityName">City Name</h2>
+
+            <h1 id="temperature">--°C</h1>
+
+            <p id="description">Weather Description</p>
+
+            <div class="weather-details">
+
+                <div class="detail-box">
+                    <h3>💧 Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>🌬 Wind</h3>
+                    <p id="wind">-- km/h</p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>🌡 Feels Like</h3>
+                    <p id="feelsLike">--°C</p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>🌍 Pressure</h3>
+                    <p id="pressure">-- hPa</p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>🌅 Sunrise</h3>
+                    <p id="sunrise">--:--</p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>🌇 Sunset</h3>
+                    <p id="sunset">--:--</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="forecast">
+
+            <h2>📅 5-Day Forecast</h2>
+
+            <div id="forecastContainer"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
